@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng-app = "planets">
+<head>
+	<title>Solar System</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link type="image/gif" rel="icon" href="logo.ico">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<script type="text/javascript" src="app.js"></script>
+</head>
+<body  ng-controller="planetControl as ctrl">
+<img src="mercury.gif" id="Mercury" ng-click="ctrl.setPlanet('1')" ng-style = "ctrl.anim1">
+<img src="venus.gif" id="Venus" ng-click="ctrl.setPlanet('2')" ng-style = "ctrl.anim2">
+<img src="earth.gif" id="Earth" ng-click="ctrl.setPlanet('3')" ng-style = "ctrl.anim3">
+<img src="mars.gif" id="Mars" ng-click="ctrl.setPlanet('4')" ng-style = "ctrl.anim4">
+<img src="jupiter.gif" id="Jupiter" ng-click="ctrl.setPlanet('5')" ng-style = "ctrl.anim5">
+<img src="saturn.png" id="Saturn" ng-click="ctrl.setPlanet('6')" ng-style = "ctrl.anim6">
+<img src="uranus.gif" id="Uranus" ng-click="ctrl.setPlanet('7')" ng-style = "ctrl.anim7">
+<img src="neptune.gif" id="Neptune" ng-click="ctrl.setPlanet('8')" ng-style = "ctrl.anim8">
+<img src="pluto.gif" id="Pluto" ng-click="ctrl.setPlanet('9')" ng-style = "ctrl.anim9">
+<img src="sun.gif" id="Sun">
+<div class="container">
+	<div>
+		<div class="col-md-4 form-group">
+			<select
+				class="form-control"
+				name = "planet"
+				ng-model = "ctrl.planet">
+					<option value="">Click Planet or Choose from List</option>
+					<option value = 1>Mercury</option>
+					<option value = 2>Venus</option>
+					<option value = 3>Earth</option>
+					<option value = 4>Mars</option>
+					<option value = 5>Jupiter</option>
+					<option value = 6>Saturn</option>
+					<option value = 7>Uranus</option>
+					<option value = 8>Neptune</option>
+					<option value = 9>Pluto</option>
+			</select>
+		</div>
+		<div class="col-md-2 form-group">
+			<button class="form-control btn btn-success" ng-click = "ctrl.start()">Start</button>
+		</div>
+		<div class="col-md-2 col-md-offset-1 form-group">
+			<button class="form-control btn btn-danger" ng-click = "ctrl.pause()">Stop</button>
+		</div>
+		<div class="col-md-2 col-md-offset-1 form-group">
+			<button class="form-control btn btn-primary" ng-click = "ctrl.reset()">Reset All</button>
+		</div>
+	</div>
+</div>
+</body>
+</html>

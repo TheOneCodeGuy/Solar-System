@@ -1,0 +1,323 @@
+#Sun
+{
+	position: absolute;
+	left: 583px;
+	top: 305px;
+	height: 120px;
+	width: 120px;
+	z-index: 0;
+}
+
+#Mercury
+{
+	height: 15px;
+	width: 15px;
+	position: absolute;
+	left: 710px;
+	top: 357.5px;
+	animation: rotate1 0.8s infinite linear;
+}
+
+#Venus
+{
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	left: 732px;
+	top: 345px;
+	animation: rotate2 2.4s infinite linear;
+}
+
+#Earth
+{
+	height: 55px;
+	width: 55px;
+	position: absolute;
+	left: 779px;
+	top: 337.5px;
+	animation: rotate3 4s infinite linear;
+}
+
+#Mars
+{
+	height: 25px;
+	width: 25px;
+	position: absolute;
+	left: 841px;
+	top: 352.5px;
+	animation: rotate4 7.6s infinite linear;
+}
+
+#Jupiter
+{
+	height: 80px;
+	width: 90px;
+	position: absolute;
+	left: 873px;
+	top: 320px;
+	animation: rotate5 57.6s infinite linear;
+}
+
+#Saturn
+{
+	height: 80px;
+	width: 100px;
+	position: absolute;
+	left: 970px;
+	top: 325px;
+	animation: rotate6 118s infinite linear;
+}
+
+#Uranus
+{
+	height: 70px;
+	width: 70px;
+	position: absolute;
+	left: 1057px;
+	top: 330px;
+	animation: rotate7 336s infinite linear;
+}
+
+#Neptune
+{
+	height: 70px;
+	width: 70px;
+	position: absolute;
+	left: 1134px;
+	top: 330px;
+	animation: rotate8 659.2s infinite linear;
+}
+
+#Pluto
+{
+	height: 10px;
+	width: 10px;
+	position: absolute;
+	left: 1211px;
+	top: 360px;
+	animation: rotate9 992s infinite linear;
+}
+body
+{
+	perspective: 2000px;
+	background-image: url("background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+@keyframes rotate1
+{
+	25% {
+		transform: translate3d(-67px,0px,-67px);
+		z-index: -1;
+		}
+	50% {
+		transform: translate3d(-149px,0px,0px);
+		z-index: -1;
+		}
+		60%{
+		z-index: 1;
+		}
+	75% {
+		z-index: 1;
+		transform: translate3d(-67px,0px,67px);
+		}
+	100%{
+		transform: translate3d(0px,0px,0px);
+		z-index: 1;
+		}
+}
+
+@keyframes rotate2
+{
+	25% {
+		transform: translate3d(-89px,0px,-89px);
+		z-index: -2;
+		}
+	50% {
+		transform: translate3d(-218px,0px,0px);
+		z-index: -2;
+		}
+		60%{
+		z-index: 2;
+		}
+	75% {
+		z-index: 2;
+		transform: translate3d(-89px,0px,89px);
+		}
+	100%{
+		transform: translate3d(0px,0px,0px);
+		z-index: 2;
+		}
+}
+
+@keyframes rotate3
+{
+	25% {
+		transform: translate3d(-136px,0px,-136px);
+		z-index: -3;
+		}
+	50% {
+		transform: translate3d(-327px,0px,0px);
+		z-index: -3;
+		}
+		60%{
+		z-index: 3;
+		}
+	75% {
+		z-index: 3;
+		transform: translate3d(-136px,0px,136px);
+		}
+	100%{
+		transform: translate3d(0px,0px,0px);
+		z-index: 3;
+		}
+}
+
+@keyframes rotate4
+{
+	25% {
+		transform: translate3d(-198px,0px,-198px);
+		z-index: -4;
+		}
+	50% {
+		transform: translate3d(-421px,0px,0px);
+		z-index: -4;
+		}
+		60%{
+		z-index: 4;
+		}
+	75% {
+		z-index: 4;
+		transform: translate3d(-198px,0px,198px);
+		}
+	100%{
+		transform: translate3d(0px,0px,0px);
+		z-index: 4;
+		}
+}
+
+@keyframes rotate5
+{
+	25% {
+		transform: translate3d(-230px,0px,-230px);
+		z-index: -5;
+		}
+	50% {
+		transform: translate3d(-550px,0px,0px);
+		z-index: -5;
+		}
+	60%{
+		z-index: 5;
+		}
+	75% {
+		z-index: 5;
+		transform: translate3d(-230px,0px,230px);
+		}
+	100%{
+		transform: translate3d(0px,0px,0px);
+		z-index: 5;
+		}
+}
+
+@keyframes rotate6
+{
+	25% {
+		transform: translate3d(-327px,0px,-327px);
+		z-index: -6;
+		}
+	50% {
+		transform: translate3d(-734px,0px,0px);
+		z-index: -6;
+		}
+	60%{
+		z-index: 6;
+		}
+	75% {
+		z-index: 6;
+		transform: translate3d(-327px,0px,327px);
+		}
+	100%{
+		transform: translate3d(0px,0px,0px);
+		z-index: 6;
+		}
+}
+
+@keyframes rotate7
+{
+	25% {
+		transform: translate3d(-414px,0px,-414px);
+		z-index: -7;
+		}
+	50% {
+		transform: translate3d(-898px,0px,0px);
+		z-index: -7;
+		}
+		60%{
+		z-index: 7;
+		}
+	75% {
+		z-index: 7;
+		transform: translate3d(-414px,0px,414px);
+		}
+	100%{
+		transform: translate3d(0px,0px,0px);
+		z-index: 7;
+		}
+}
+
+@keyframes rotate8
+{
+	25% {
+		transform: translate3d(-491px,0px,-491px);
+		z-index: -8;
+		}
+	50% {
+		transform: translate3d(-1052px,0px,0px);
+		z-index: -8;
+		}
+		60%{
+		z-index: 8;
+		}
+	75% {
+		z-index: 8;
+		transform: translate3d(-491px,30px,491px);
+		}
+	100%{
+		transform: translate3d(0px,0px,0px);
+		z-index: 8;
+		}
+}
+
+@keyframes rotate9
+{
+	25% {
+		transform: translate3d(-568px,0px,-568px);
+		z-index: -9;
+		}
+	50% {
+		transform: translate3d(-1146px,0px,0px);
+		z-index: -9;
+		}
+		60%{
+		z-index: 9;
+		}
+	75% {
+		z-index: 9;
+		transform: translate3d(-568px,0px,568px);
+		}
+	100%{
+		transform: translate3d(0px,0px,0px);
+		z-index: 9;
+		}
+}
+
+label
+{
+	color: white;
+	font-size: 20px;
+}
+
+button, select
+{
+	margin-top: 50px;
+}
